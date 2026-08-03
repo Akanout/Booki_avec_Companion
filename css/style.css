@@ -251,8 +251,8 @@ header {
     margin-top: 30px;
 }
 
-.hebergements-cards a {
-    width: calc((100% - 60px) / 3);
+.hebergements-cards article {
+    flex: 1 1 calc((100% - 30px) / 3);
 }
 
 .hebergements-cards img {
@@ -381,8 +381,8 @@ header {
         font-size: 13px;
     }
 
-    .hebergements-cards a {
-        width: calc((100% - 30px) / 2);
+    .hebergements-cards article {
+        flex: 1 1 calc((100% - 30px) / 2);
     }
 
     .activites-cards img {
@@ -492,8 +492,8 @@ header {
         margin-top: 15px;
     }
 
-    .hebergements-cards a {
-        width: 100%;
+    .hebergements-cards article {
+      flex: 100%;
     }
 
     .activites {

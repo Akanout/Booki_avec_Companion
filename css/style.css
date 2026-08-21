@@ -17,6 +17,7 @@
 body {
     display: flex;
     justify-content: center;
+    margin: 0;
 }
 
 .main-container {
@@ -58,6 +59,15 @@ a {
 
 .neutral-star {
     color: var(--main-bg-color)
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
 }
 
 /****** Hebergements And Populaires ***********/
@@ -141,6 +151,7 @@ header {
     display: flex;
     gap: 60px;
     list-style: none;
+    padding: 0;
 }
 
 .main-nav a {
@@ -168,6 +179,7 @@ header {
     background-color: var(--main-bg-color);
     padding: 0 15px;
     border-radius: 15px 0 0 15px;
+    color: #000;
 }
 
 .search-bar input {
@@ -253,7 +265,7 @@ header {
 }
 
 .hebergements-cards article {
-    flex: 1 1 calc((100% - 30px) / 3);
+    flex: 1 1 calc((100% - 60px) / 3 - 10px);
 }
 
 .hebergements-cards img {
@@ -382,8 +394,10 @@ header {
         font-size: 13px;
     }
 
-    .hebergements-cards article {
-        flex: 1 1 calc((100% - 30px) / 2);
+    .filters {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
     }
 
     .activites-cards img {
@@ -494,7 +508,7 @@ header {
     }
 
     .hebergements-cards article {
-      flex: 100%;
+        flex: 100%;
     }
 
     .activites {
